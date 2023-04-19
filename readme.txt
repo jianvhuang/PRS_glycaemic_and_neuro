@@ -1,0 +1,42 @@
+
+########################################################
+SYSTEM REQUIREMENTS
+Operating systems: Windows 10
+Software: R 4.2.2 (https://cran.r-project.org/bin/windows/base/) and RStudio 2022.12.0 Build 353 (https://posit.co/download/rstudio-desktop/)
+Required packages in R: data.table, openxlsx, stringr, ggplot2, sensemakr, lmtest, sandwich, ivreg, regmedint
+Non-standard hardware: None
+########################################################
+
+########################################################
+INSTALLATION GUIDE
+R can be downloaded from https://cran.r-project.org/bin/windows/base/
+RStudio can be downloaded from https://posit.co/download/rstudio-desktop/
+Typical install time: <10 minutes
+########################################################
+
+########################################################
+DEMO
+Expected run time for each of these code is about 5 minutes.
+Instructions to run on data and expected output: 
+1. sampledata.csv contains the example data for performing analysis using the attached R codes. In our manuscript, some of these R codes were applied to different cohorts (GUSTO vs ALSPAC) or different subsets of the cohort (Male vs Female). 
+2. descriptive-cohort_characteristics.R is used to performed descriptive anlaysis to investigate cohort characteristics. The output file can be used to reproduce cohort characteristics table similar to Table 1 and Supplementary Table 2. Note that the output file is not in the same format as the final Table presented in the manuscript and additional formatting is needed.
+3. descriptive-correlation-PRS_GlycemicTrait-FastingGlucose&HOMAIR.R is used to prepare the correlation plot (Figure 1 in the manuscript).
+4. analysis-main.R is used to perform the main association analysis between polygenic risk scores and neurodevelopmental outcomes. This script can be used to perform the analysis between one PRS and one outcome adjusting for covariates. The output of the script is a csv file containing result from the regression analysis. Given that we investigated multiple PRS and multiple outcomes, the exposure.temp, outcome.temp, and cov.temp in this script can be changed to perform different analyses of interest. Sex-specific analysis can also be performed using the same script by selecing only the male or female participants. Table 2 and Figure 2 were prepared based after obtaining results from all analyses using this script.
+5. analysis-ivreg.R is used to perform the instrumental variable regression. In our analysis, we used PRS as the instrument, level of glycaemic traits as the exposure, and a neurodevelopmental outcome as the outcome. The output of the script is a csv file containing result from the regression analysis. Similar to the main_analysis, we performed multiple sets of analyses. The iv_exposure.temp, exposure.temp, outcome.temp, and cov.temp in this script can be changed to perform different analyses of interest. Sex-specific analysis can also be performed using the same script by selecing only the male or female participants. Table 3 and Figure 3 were prepared based on the results from all analyses using this script.
+6. analysis-mediation.R is used to perform the mediation analysis. The output of the script is a csv file containing result from the mediation analysis. Similar to the main_analysis, we performed multiple sets of analyses. The expo, medi, outc, and list.cov in this script can be changed to perform different analyses of interest. Supplementary Table 6 and Supplementary Figures for mediation analysis were prepared based on the results from all analyses using this script.
+########################################################
+
+########################################################
+INSTRUCTION
+1. Open the a provided R code in R/RStudio. 
+2. Install all required R packages.
+3. Replace home="H:/HUANGJIAN/analysis/ZZZ-manuscript-PRS_T2D-Neuro/manuscript/NatComms/" with your own directory where the "data" folder is stored
+4. The code should run correctly and result should be saved in an "output" folder, which will automatically be created under the home directory
+
+Sample data are stored in ./data
+Analysis codes are stored in ./code
+Output files are stored in ./output
+
+As described in the main text, data from the GUSTO cohort is available upon request from the authors and data from the ALSPAC cohort must obtained directly from the ALSPAC research group. 
+Here, we provide an example dataset to perform the same type of analyses as we conducted in the manuscript. To generate the exact tables in the manuscript, the raw output file from these scripts requires further formatting steps in Microsoft Excel and Word.
+########################################################
