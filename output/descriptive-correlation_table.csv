@@ -1,0 +1,49 @@
+"PRS","GWAS_trait","sample","variable","value","label"
+"PRS for child HOMA-IR
+based on GWAS on T2D","T2D","Paternal PRS","HOMA-IR",-0.02703884,-0.027
+"PRS for child HOMA-IR
+based on GWAS on T2D","T2D","Maternal PRS","HOMA-IR",0.063080725,0.063
+"PRS for child HOMA-IR
+based on GWAS on T2D","T2D","Child PRS","HOMA-IR",0.105270556,0.105
+"PRS for child fasting glucose
+based on GWAS on T2D","T2D","Paternal PRS","HOMA-IR",0.061081215,0.061
+"PRS for child fasting glucose
+based on GWAS on T2D","T2D","Maternal PRS","HOMA-IR",-0.011094622,-0.011
+"PRS for child fasting glucose
+based on GWAS on T2D","T2D","Child PRS","HOMA-IR",0.074593954,0.075
+"PRS for child HOMA-IR
+based on GWAS on T2D","T2D","Paternal PRS","Fasting glucose",0.031451652,0.031
+"PRS for child HOMA-IR
+based on GWAS on T2D","T2D","Maternal PRS","Fasting glucose",0.181534732,0.182
+"PRS for child HOMA-IR
+based on GWAS on T2D","T2D","Child PRS","Fasting glucose",0.049293621,0.049
+"PRS for child fasting glucose
+based on GWAS on T2D","T2D","Paternal PRS","Fasting glucose",0.14733895,0.147
+"PRS for child fasting glucose
+based on GWAS on T2D","T2D","Maternal PRS","Fasting glucose",0.063125392,0.063
+"PRS for child fasting glucose
+based on GWAS on T2D","T2D","Child PRS","Fasting glucose",0.108033733,0.108
+"PRS for child fasting glucose
+based on GWAS on fasting glucose","fasting glucose","Paternal PRS","HOMA-IR",-0.094867878,-0.095
+"PRS for child fasting glucose
+based on GWAS on fasting glucose","fasting glucose","Maternal PRS","HOMA-IR",-0.1116728,-0.112
+"PRS for child fasting glucose
+based on GWAS on fasting glucose","fasting glucose","Child PRS","HOMA-IR",0.056299863,0.056
+"PRS for child HOMA-IR
+based on GWAS on fasting glucose","fasting glucose","Paternal PRS","HOMA-IR",-0.043169663,-0.043
+"PRS for child HOMA-IR
+based on GWAS on fasting glucose","fasting glucose","Maternal PRS","HOMA-IR",-0.070032872,-0.07
+"PRS for child HOMA-IR
+based on GWAS on fasting glucose","fasting glucose","Child PRS","HOMA-IR",0.17363091,0.174
+"PRS for child fasting glucose
+based on GWAS on fasting glucose","fasting glucose","Paternal PRS","Fasting glucose",0.125607775,0.126
+"PRS for child fasting glucose
+based on GWAS on fasting glucose","fasting glucose","Maternal PRS","Fasting glucose",0.073123504,0.073
+"PRS for child fasting glucose
+based on GWAS on fasting glucose","fasting glucose","Child PRS","Fasting glucose",0.331104211,0.331
+"PRS for child HOMA-IR
+based on GWAS on fasting glucose","fasting glucose","Paternal PRS","Fasting glucose",0.048616324,0.049
+"PRS for child HOMA-IR
+based on GWAS on fasting glucose","fasting glucose","Maternal PRS","Fasting glucose",0.116015065,0.116
+"PRS for child HOMA-IR
+based on GWAS on fasting glucose","fasting glucose","Child PRS","Fasting glucose",0.199061028,0.199

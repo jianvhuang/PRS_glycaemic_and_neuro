@@ -168,7 +168,7 @@ output.Inter.Mod=output.Inter.Mod[,.(exposure,comparison,a0,a1,mediator,outcome,
                                                                  samplesize,samplesize.medi0,samplesize.medi1,
                                                                  variable,beta,se,zvalue,pvalue,lower95,upper95)]
 
-write.csv(output.Inter.Mod,file=paste0(DIR.output,"/mediation-",expo,"-",medi,"-",outc,".csv"),row.names = F)
+write.csv(output.Inter.Mod,file=paste0(DIR.output,"/mediation-",expo,"-",medi,"-",outc,"-",ModelIndex,".csv"),row.names = F)
 
 
 

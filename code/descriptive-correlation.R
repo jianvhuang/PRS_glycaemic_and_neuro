@@ -20,7 +20,7 @@ DIR.output=paste0(home,"/output/")
 
 ######################################################
 # read data
-df4corr=fread(file=paste0(DIR.data,"/df4corr.csv"))
+df4corr=fread(file=paste0(DIR.data,"/sample_df4corr.csv"))
 ######################################################
 
 ######################################################
@@ -42,7 +42,7 @@ df4corr.long[,variable:=ifelse(variable=="corr_CBH2226HOIR","HOMA-IR",
                                ifelse(variable=="corr_CGL2226FAST","Fasting glucose",NA))]
 df4corr.long[,variable:=factor(variable,levels = c("HOMA-IR","Fasting glucose"))]
 
-write.csv(df4corr.long,file=paste0(DIR.output,"/descriptive-correlation-PRS_GlycemicTrait.csv"),row.names = F)
+write.csv(df4corr.long,file=paste0(DIR.output,"/descriptive-correlation_table.csv"),row.names = F)
 
 plot=ggplot(df4corr.long, aes(y = PRS, x = variable, fill = label)) +
   geom_tile(color="gray",linewidth = 1, width = 0.95, height = 0.95) +
@@ -66,7 +66,7 @@ plot=ggplot(df4corr.long, aes(y = PRS, x = variable, fill = label)) +
         strip.text.x = element_text(size = 15))
 
   
-  png(file=paste0(DIR.output,"/descriptive-correlation-PRS_GlycemicTrait.png"),
+  png(file=paste0(DIR.output,"/descriptive-correlation_plot.png"),
       width=35, height=25,units="cm",res=300)
   plot(plot)
   dev.off()
